@@ -1,29 +1,37 @@
 {
-  "name": "passport-oauth-no-web-server",
+  "name": "@producteca/passport-oauth-no-web-server",
   "version": "0.1.15",
   "description": "OAuth 1.0 and 2.0 authentication strategies for Passport.",
-  "keywords": ["passport", "oauth", "auth", "authn", "authentication"],
+  "keywords": [
+    "passport",
+    "oauth",
+    "auth",
+    "authn",
+    "authentication"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/andreskir/passport-oauth.git"
+    "url": "git+https://github.com/Parsimotion/passport-oauth-no-web-server.git"
   },
   "bugs": {
-    "url": "http://github.com/andreskir/passport-oauth/issues"
+    "url": "https://github.com/Parsimotion/passport-oauth-no-web-server/issues"
   },
   "author": {
     "name": "Jared Hanson",
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT"
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib/passport-oauth",
   "dependencies": {
     "pkginfo": "0.2.x",
     "passport": "~0.1.1",
-    "oauth-no-web-server": "0.9.11"
+    "@producteca/oauth-no-web-server": "0.9.13"
   },
   "devDependencies": {
     "vows": "0.6.x"
@@ -31,5 +39,7 @@
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js test/**/*-test.js"
   },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }
